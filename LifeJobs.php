@@ -92,8 +92,6 @@ class LifeJobs extends PluginBase implements Listener {
 
         if(!isset($this->db["player"][strtolower($player->getName())])) {
             $this->db["player"][strtolower($player->getName())]["Job"] = "일반인";
-            $this->db["player"][strtolower($player->getName())]["level"] = 1;
-            $this->db["player"][strtolower($player->getName())]["exp"] = 0;
         }
     }
 
