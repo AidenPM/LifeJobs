@@ -105,6 +105,7 @@ class LifeJobs extends PluginBase implements Listener {
                 if($item->getDamage() == 5) {
                     if(!isset($this->cool[$player->getName()])) {
                         $this->cool[$player->getName()] = time() + 20 * 5;
+                        $player->addEffect(new EffectInstance(Effect::getEffect(Effect::CONDUIT_POWER), 3, 7, true));
                         $player->sendMessage(static::$prefix . "전사 스킬을 사용했습니다.");
                     }
                 }
@@ -116,6 +117,7 @@ class LifeJobs extends PluginBase implements Listener {
                 if($item->getId() == 5) {
                     if(!isset($this->cool[$player->getName()])) {
                         $this->cool[$player->getName()] = time() + 20 * 7;
+                        $player->addEffect(new EffectInstance(Effect::getEffect(Effect::SPEED), 5, 10, true));
                         $player->sendMessage(static::$prefix . "도적 스킬을 사용했습니다.");
                     }
                 }
