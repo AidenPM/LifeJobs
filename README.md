@@ -3,10 +3,10 @@
 
 ## Support API for developers.
 
+* After declaration
 ```php
 use pju6791\LifeJobs\LifeJobs; 
 ```
-After declaration
 
 * get myJob
 ```php
